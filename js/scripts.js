@@ -19,10 +19,10 @@ function count() {
   $('#applySelection tr').filter(':has(:checkbox:checked)').each(function() {
     amountSelected += Number(($(this).find('[id^=price]').text()).replace(/[\(]/g, '-').replace(/[^0-9\.-]+/g, ""));
   });
-  /* var selectedPriceAmount = '$' + amountSelected.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-   $('#totalPrice').text(selectedPriceAmount);
-  }
-  function allChecked() {
+  var selectedPriceAmount = '$' + amountSelected.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  $('#totalPrice').text(selectedPriceAmount);
+}
+/*  function allChecked() {
   	 if (document.getElementById("checkAll").checked == true) {
   		 $('[id^=chkBox]').prop('checked', true);
   		 count();
