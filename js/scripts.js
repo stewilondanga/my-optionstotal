@@ -10,7 +10,7 @@ var navigate = (function() {
 $(document).ready(function() {
   $('.tooltipped').tooltip();
 });
-/*$("[id^=chkBox]").on("click", function() {
+$("[id^=chkBox]").on("click", function() {
   count();
 });
 /*function count() {
