@@ -7,13 +7,13 @@ var navigate = (function() {
   });
 })();
 
-/*$(document).ready(function(){
-	 $('.tooltipped').tooltip();
- });
-$( "[id^=chkBox]" ).on( "click", function() {
- count();
+$(document).ready(function() {
+  $('.tooltipped').tooltip();
 });
-function count() {
+/*$("[id^=chkBox]").on("click", function() {
+  count();
+});
+/*function count() {
  var amountSelected = 0
  $('#applySelection tr').filter(':has(:checkbox:checked)').each(function() {
 	 amountSelected += Number(($(this).find('[id^=price]').text()).replace(/[\(]/g,'-').replace(/[^0-9\.-]+/g,""));
