@@ -22,12 +22,13 @@ function count() {
   var selectedPriceAmount = '$' + amountSelected.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   $('#totalPrice').text(selectedPriceAmount);
 }
-/*  function allChecked() {
-  	 if (document.getElementById("checkAll").checked == true) {
-  		 $('[id^=chkBox]').prop('checked', true);
-  		 count();
-  	 }else {
-  		 $('[id^=chkBox]').prop('checked', false);
-  		 count();
-  	 }
+
+function allChecked() {
+  if (document.getElementById("checkAll").checked == true) {
+    $('[id^=chkBox]').prop('checked', true);
+    count();
+  } else {
+    $('[id^=chkBox]').prop('checked', false);
+    count();
   }
+}
