@@ -21,6 +21,105 @@
         </a>
     </div>
 
+    <div class="row">
+      <div class="col s8 m8 offset-s2 offset-m2">
+        <h2 class="header center">Option Selector</h2>
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Select What You'd Like!</p>
+              <br/>
+              <div class="divider"></div>
+              <br/>
+              <div class="row no-bottom-margin">
+                <label class="col s1 center tooltipped" data-position="right" data-tooltip="Select All" >
+                  <input id="checkAll" onChange="allChecked() " type="checkbox" class="filled-in" />
+                  <span></span>
+                </label>
+              </div>
+              <table id="applySelection">
+                <thead>
+                  <tr>
+                    <th>Selection</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="row">
+                      <label class="col s2">
+                        <input id="chkBox1" type="checkbox" />
+                        <span></span>
+                      </label>
+                    </td>
+                    <td>Eclair</td>
+                    <td id="price1">$1,000.87</td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <label class="col s2">
+                        <input id="chkBox2" type="checkbox" />
+                        <span></span>
+                      </label>
+                    </td>
+                    <td>Jellybean</td>
+                    <td id="price2">$30.76</td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <label class="col s2">
+                        <input id="chkBox3" type="checkbox" />
+                        <span></span>
+                      </label>
+                    </td>
+                    <td>Lollipop</td>
+                    <td id="price3">$7.00</td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <label class="col s2">
+                        <input id="chkBox4" type="checkbox" />
+                        <span></span>
+                      </label>
+                    </td>
+                    <td>KitKat</td>
+                    <td id="price4">$0.01</td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <label class="col s2">
+                        <input id="chkBox5" type="checkbox" />
+                        <span></span>
+                      </label>
+                    </td>
+                    <td>Coupon</td>
+                    <td id="price5">($5.00)</td>
+                  </tr>
+                  <tr>
+                    <td class="row">
+                      <label class="col s2">
+                        <input id="chkBox6" type="checkbox" />
+                        <span></span>
+                      </label>
+                    </td>
+                    <td>Discount</td>
+                    <td id="price6">$-5.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-action">
+              <p class="teal-text text-lighten-2">
+                Total: <span id="totalPrice">$0.00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <section id="contact">
     <div class="overlay">
       <div class="containers">
